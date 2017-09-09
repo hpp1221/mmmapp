@@ -1,0 +1,236 @@
+/* header begin */
+html,body {
+  background-color: #fff;
+}
+#header {
+  height: 50px;
+  background-color: #ff841d;
+  padding:12px;
+  border-bottom:1px solid #e6e6e6;
+}
+.logo {
+  margin-left:5px;
+}
+.logo img {
+  height:25px;
+
+}
+.app {
+  float: right;
+  margin-top: -5px;
+}
+.app img {
+  height:34px;
+
+}
+/* header end */
+/* search begin */
+#search {
+  background-color:#fff;
+  height:50px;
+  border-bottom:1px solid #e6e6e6;
+}
+#search form {
+  padding-right: 70px;
+  position:relative;
+  padding:10px;
+}
+#search form input[type="search"] {
+  width:100%;
+  background-color:#f1f1f1;
+  padding-left:5%;
+  height:30px;
+  border:none;
+  border-radius:15px;
+}
+#search form input[type="submit"]{
+  width: 63px;
+  height: 30px;
+  background-color:#ff841d;
+  position:absolute;
+  right:0px;
+  top:0px;
+  border:none;
+  border-radius:15px;
+  margin-top:10px;
+  margin-right:10px;
+  color:#fff;
+  font-size:16px;
+}
+/* search end */
+/*product-bijia begin*/
+#product .product-title {
+  background-color: #ccc;
+  height: 30px;
+
+}
+#product .product-title .breadcrumb li+li::before {
+  content: ">";
+  color: #000;
+}
+
+#product .product-bijia {
+  background-color: #fff;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+#product .product-bijia em {
+  font-size: 13px;
+  margin-right: 70px;
+}
+#product .product-bijia .product-name {
+  padding-top: 8px;
+}
+#product .product-bijia span {
+  font-size: 13px;
+  color: #a1a1a1;
+}
+#product .product-img {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+#product .product-collect a img{
+  position: absolute;
+  right: 23px;
+  top: 318px;
+}
+.product-info .tab li{
+  border:1px solid #000;
+  border-left:0;
+  text-align: center;
+  background-color: #FF9D1D;
+  list-style: none;
+
+}
+.product-info .tab li:last-child {
+  border-right: 0;
+}
+.product-info .tab ul li a{
+  color: #fff;
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  font-size: 15px;
+}
+.plist .note {
+  font-size: 12px;
+  color: #888;
+  padding: 8px 10px;
+  line-height: 18px;
+  background-color: #fff;
+}
+.product-com-title {
+  margin-top: 5px;
+  border-top: 4px solid #7a7a7a;
+}
+.product-com-title div{
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  overflow: hidden;
+  background: #dbdbdb;
+  font-size: 14px;
+  border-top:1px solid #fff;
+}
+.product-com-list ul{
+  background-color: #fff;
+  padding:8px 10px 5px 10px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.clearfix {
+  width: 100%;
+  height: 18px;
+}
+
+.product-com-list .com-name {
+  width: 50%;
+  color: #999;
+}
+.product-com-list .com-time {
+  width: 50%;
+  color: #666;
+  text-align: right;
+
+}
+.product-com-list .com-from {
+  color: #666;
+  width: 50%;
+  text-align: right;
+}
+.product-com-list .com-content{
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
+  padding-top: 5px;
+}
+.product-com-list .answer{
+  font-size: 12px;
+  color: #999;
+  margin:5px 0 0 0;
+
+}
+.product-com-list .more{
+  padding: 0 8px;
+  margin-top: 16px;
+  height: 50px;
+  background-color: #F2F2F2;
+  text-align: center;
+  line-height: 50px;
+  overflow: hidden;
+}
+.product-com-list .more .morein {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  margin-top: 10px;
+  border:1px solid #bababa;
+  border-radius: 8px;
+  color: #5a5a5a;
+  background-color: #e1e1e1;
+  font-size: 14px;
+}
+/*product-bijia end*/
+#footer .row div{
+  text-align:center;
+  border:1px solid #ccc;
+  height:30px;
+  line-height:30px;
+  margin-top: 10px;
+}
+#footer .row div +div {
+  border-left:none;
+}
+#footer .row div a img {
+  width: 15px;
+  height: 15px;
+}
+#footer p {
+  margin:5px;
+  text-align:center;
+  font-size:12px;
+
+}
+#footer p a:first-child {
+  color:red;
+}
+.footer-title {
+  background-color:#ff9000;
+  height:35px;
+  margin-top:5px;
+  color:#fff;
+  padding:5px 5px 0px 10px;
+  border-bottom:1px solid #ffc881;
+
+}
+#footer .footer-title span {
+  font-size:18px;
+  float: left;
+}
+#footer .footer-title img {
+  float: right;
+  margin-top:3px;
+}
+/* footer end */

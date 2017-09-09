@@ -1,0 +1,145 @@
+/* header begin */
+#header {
+  height: 50px;
+  background-color: #ff841d;
+  padding:12px;
+  border-bottom:1px solid #e6e6e6;
+}
+.logo {
+  margin-left:5px;
+}
+.logo img {
+  height:25px;
+
+}
+.app {
+  float: right;
+  margin-top: -5px;
+}
+.app img {
+  height:34px;
+
+}
+/* header end */
+/* search begin */
+#search {
+  background-color:#fff;
+  height:50px;
+  border-bottom:1px solid #e6e6e6;
+}
+#search form {
+  padding-right: 70px;
+  position:relative;
+  padding:10px;
+}
+#search form input[type="search"] {
+  width:100%;
+  background-color:#f1f1f1;
+  padding-left:5%;
+  height:30px;
+  border:none;
+  border-radius:15px;
+}
+#search form input[type="submit"]{
+  width: 63px;
+  height: 30px;
+  background-color:#ff841d;
+  position:absolute;
+  right:0px;
+  top:0px;
+  border:none;
+  border-radius:15px;
+  margin-top:10px;
+  margin-right:10px;
+  color:#fff;
+  font-size:16px;
+}
+#search .hot {
+  width: 100%;
+  height: 60px;
+  border:1px solid #ccc;
+  background-color: #fff;
+}
+#search .hot .cc {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  color: #ab8156;
+  margin-top: 4px;
+  background-color: #eeeeee;
+  padding-left: 4px;
+  margin:8px 0;
+}
+#category {
+  margin-top: 57px;
+}
+.panel-title a {
+  font-weight: 600;
+}
+/* search end */
+/* category begin */
+.panel-group .panel-default .panel-collapse .panel-body .row div {
+  height: 40px;
+  border:1px solid #ccc;
+  line-height: 40px;
+  text-align: center;
+  border-left: 0;
+  border-top: 0;
+}
+.panel-group .panel-default .panel-collapse .panel-body .row div:nth-last-child(-n+3){
+  border-bottom: 0;
+}
+.panel-group .panel-default .panel-collapse .panel-body {
+  padding:0;
+}
+.panel-group  {
+  margin-bottom: 0;
+}
+.panel-group .panel-default .panel-heading h4 a {
+  display: block;
+  background: url(http://www.zuyushop.com/wap/images/arrow1.gif) right center no-repeat;
+}
+/* category end */
+/* footer begin */
+#footer .row div{
+  text-align:center;
+  border:1px solid #ccc;
+  height:30px;
+  line-height:30px;
+  margin-top: 10px;
+}
+#footer .row div +div {
+  border-left:none;
+}
+#footer .row div a img {
+  width: 15px;
+  height: 15px;
+}
+#footer p {
+  margin:5px;
+  text-align:center;
+  font-size:12px;
+
+}
+#footer p a:first-child {
+  color:red;
+}
+.footer-title {
+  background-color:#ff9000;
+  height:35px;
+  margin-top:5px;
+  color:#fff;
+  padding:5px 5px 0px 10px;
+  border-bottom:1px solid #ffc881;
+
+}
+#footer .footer-title span {
+  font-size:18px;
+  float: left;
+}
+#footer .footer-title img {
+  float: right;
+  margin-top:3px;
+}
+/* footer end */

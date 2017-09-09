@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/moneyctrl.css">
+    <link rel="stylesheet" href="css/base.css">
+
+</head>
+<body>
+<!-- header begin -->
+<header id="header">
+    <a href="index.html" class="arrow"></a>
+    <h4>省钱控 - 最新优惠</h4>
+    <a href="#" class="app"><img src="images/header_app.png" /></a>
+</header>
+<!-- header end -->
+<!-- moneyctrl begin -->
+<section id="moneyCtrl">
+
+    <!--主体商品列表-->
+    <div class="moneyCtrl-list">
+
+    </div>
+    <!--上下页数-->
+    <div class="moneyCtrl-page clearfix row">
+        <!--<input type="button" value="上一页" class="btn btn-default1"/>-->
+        <div class="col-xs-4">
+            <a href="#" class="btn btn-default1 page-prev">上一页</a>
+        </div>
+        <div class="dropdown col-xs-4">
+            <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                第一页
+                <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li>第一页</li>
+                <li>第二页</li>
+                <li>第三页</li>
+            </ul>
+        </div>
+        <!--<input type="button" value="下一页" class="btn btn-default2"/>-->
+        <div class="col-xs-4">
+            <a href="#" class="btn btn-default2 page-next">下一页</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- moneyctrl end -->
+<!-- footer begin -->
+<footer id="footer">
+    <div class="footer-title ">
+        <span>品牌排行</span>
+        <img src="http://www.zuyushop.com/wap/images/more.png" width="20" height="20">
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""><span>返回顶部</span></a>
+        </div>
+    </div>
+    <p>
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a> -- <span>掌上比价平台</span> <br>
+        <span class="url">m.manmanbuy.com</span>
+    </p>
+</footer>
+<!-- footer end -->
+
+
+<script type="text/html" id="moneyCtrlTmp">
+    {{each result as value i}}
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                {{#value.productImgSm}}
+            </a>
+        </div>
+        <div class="media-body">
+            <h5><a href="moneyproduct.html?productid={{value.productId}}">{{value.productName}}</a></h5>
+            <p class="price">{{value.productPinkage}}</p>
+            <span class="from">{{value.productFrom}} | {{value.productTime}}</span>
+            <span class="comment"><i class="icon-comment"></i>{{value.productComCount.replace("有","").replace("人评论","")}}</span>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/moneyctrl.js"></script>
+</body>
+
+</html>

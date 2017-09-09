@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/category.css">
+        <link rel="stylesheet" href="css/base.css">
+       
+    </head>
+    <body>
+    <!-- header begin -->
+	 <header id="header">
+		<a href="index.html" class="logo"><img src="images/header_logo.png" /></a>
+		<a href="#" class="app"><img src="images/header_app.png" /></a>
+	 </header>
+	<!-- header end -->
+	<!-- seareh begin -->
+	 <section id="search">
+	 <form action="#">	 	
+	 	<input type="search" value="" class="search" placeholder="请输入要比价的商品">
+	 	<input type="submit" name="" id="" class="submit" value="搜索">
+	 </form>	
+	 </section>
+	<!-- seareh end -->
+	<!-- category begin -->
+	 <section id="category">
+	 	<!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	 	  			 <div class="panel panel-default">
+	 	  			  <div class="panel-heading" role="tab" id="headingOne">
+	 	  			    <h4 class="panel-title">
+	 	  			      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded=			"true" aria-controls="collapseOne">
+	 	  			        大家电
+	 	  			      </a>
+	 	  			    </h4>
+	 	  			  </div>
+	 	  			  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+	 	  			    <div class="panel-body">
+	 	  			     	</div>
+	 	  			    </div>
+	 	  			  </div>
+	 	  		</div> -->
+  		
+	 </section>
+	<!-- category end -->
+	<!-- footer begin -->
+	 <footer id="footer">
+	 	<div class="footer-title ">
+	 		<span>品牌排行</span>
+	 		<img src="http://www.zuyushop.com/wap/images/more.png" width="20" height="20">
+	 	</div>
+	 	<div class="row">
+	 		<div class="col-xs-4">
+	 			<a href="#">登录</a>
+	 		</div>
+	 		<div class="col-xs-4">
+	 			<a href="#">注册</a>
+	 		</div>
+	 		<div class="col-xs-4">
+	 			<a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""><span>返回顶部</span></a>
+	 		</div>
+	 	</div>
+	 	<p>
+	 		<a href="#">手机APP下载</a>
+	 		<a href="#">慢慢买手机版</a> -- <span>掌上比价平台</span> <br>
+	 		<span class="url">m.manmanbuy.com</span>
+	 	</p>
+	 </footer>
+	<!-- footer end -->
+		<script type="text/html" id="categoryTitleTmp">
+		   {{each result as value i}}
+		  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  			 <div class="panel panel-default">
+  			  <div class="panel-heading" role="tab" id="headingOne">
+  			    <h4 class="panel-title">
+  			      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#{{value.titleId}}" aria-expanded=			"true" aria-controls="collapseOne" data-titleid="{{value.titleId}}">
+  			        {{value.title}}
+  			      </a>
+  			    </h4>
+  			  </div>
+  			  <div id="{{value.titleId}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+  			    <div class="panel-body">
+  			   	 	<div class="row">
+  			    		<!-- <div class="col-xs-4">电视</div>
+  			    		<div class="col-xs-4">电视</div>
+  			    		<div class="col-xs-4">电视</div>
+  			    		<div class="col-xs-4">电视</div>
+  			    		<div class="col-xs-4">电视</div>
+  			    		<div class="col-xs-4">电视</div>
+  			    		<div class="col-xs-4">电视</div>
+  			    		<div class="col-xs-4">电视</div> -->		    		
+  			    	</div>
+  			     </div>
+  			    </div>
+  			  </div>
+  		 </div>
+			{{/each}}
+
+		 </script>
+		<script type="text/html" id="categoryTmp">
+			{{each result as value i}}
+				<div class="col-xs-4"><a href="productList.html?categoryid={{value.categoryId}}">{{value.category}}</a></div>
+			{{/each}}
+		</script>
+
+	<script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/template.js"></script>
+     <script src="js/category.js"></script>
+    </body>
+    
+</html>

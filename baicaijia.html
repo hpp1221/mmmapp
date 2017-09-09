@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/baicaijia.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/less.js"></script>
+
+</head>
+<body>
+<!--header begin-->
+<header id="header">
+    <a href="index.html" class="arrow"></a>
+    <h4>白菜价 - 淘宝内部券</h4>
+    <a href="#" class="app"><img src="images/header_app.png"/></a>
+</header>
+<!--header end-->
+<!-- baicajia begin -->
+<main id="baicajia">
+    <div class="title clearfix">
+        <!--<ul>
+            <li><a href="#">全部</a></li>
+        </ul>-->
+    </div>
+    <div class="smt">
+        <input type="submit" value="">
+        <span></span>
+    </div>
+    <div class="content clearfix">
+       <!-- <ul>
+            <li>
+                <a biz-itemid="538754112089" class="gobuy" isconvert="1" href="http://s.click.taobao.com/lkqGHQx"
+                   target="_blank"></a>
+
+                <div class="content-list">
+                    <div class="pic">
+                        <i></i>
+                        <img src="./images/mmbweixin2.png" alt=""/>
+                    </div>
+                    <div class="inf">
+                        <div class="i">
+                            <div class="t">{{#value.productName}}</div>
+                            <div class="pr">{{#value.productPrice}}</div>
+                        </div>
+                        <div class="bar clearfix">
+                            {{#value.productCouponRemain}}
+                        </div>
+                        <div class="b clearfix">
+                            <div class="q">{{#value.productCoupon}}</div>
+                            <div class="g">{{#value.productHref}}</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>-->
+    </div>
+</main>
+<!-- baicajia end -->
+<!-- footer begin -->
+<footer id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""><span>返回顶部</span></a>
+        </div>
+    </div>
+    <p>
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a> -- <span>掌上比价平台</span> <br>
+        <span class="url">m.manmanbuy.com</span>
+    </p>
+</footer>
+<!-- footer end -->
+
+<script type="text/html" id="baicaijiaTitleTmp">
+    <ul>
+        {{each result as value i}}
+        <li><a href="#" data-titleid="{{value.titleId}}">{{value.title}}</a></li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/html" id="baicaijiaDataTmp">
+    <ul>
+        {{each result as value i}}
+        <li>
+            <a biz-itemid="538754112089" class="gobuy" isconvert="1" href="http://s.click.taobao.com/lkqGHQx"
+               target="_blank"></a>
+
+            <div class="content-list clearfix">
+                <div class="pic">
+                    <i></i>
+                    {{#value.productImg}}
+                </div>
+                <div class="inf">
+                    <div class="i">
+                        <div class="t">{{#value.productName}}</div>
+                        <div class="pr">{{#value.productPrice}}</div>
+                    </div>
+                    <div class="bar clearfix">
+                        {{#value.productCouponRemain}}
+                    </div>
+                    <div class="b clearfix">
+                        <div class="q">{{#value.productCoupon}}</div>
+                        <div class="g">{{#value.productHref}}</div>
+                    </div>
+
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/baicaijia.js"></script>
+</body>
+
+</html>

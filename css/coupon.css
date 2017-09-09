@@ -1,0 +1,115 @@
+/* header begin */
+html,body {
+  background-color: #fff;
+}
+#header {
+  height: 50px;
+  background-color: #ff841d;
+  //padding:12px;
+  border-bottom:1px solid #e6e6e6;
+
+}
+#header .arrow {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/icon_bar.png);
+  background-position: -95px 3px;
+  background-size: 230px 134px;
+  color: #fff;
+  float: left;
+}
+#header h4 {
+  margin:0;
+  float: left;
+  color: #fff;
+  line-height: 50px;
+  left: 50%;
+  position: absolute;
+  margin-left: -27px;
+}
+.app {
+  float: right;
+  margin:8px 10px 0 0;
+}
+.app img {
+  height:34px;
+
+}
+/* header end */
+/*coupon begin*/
+.coupon {
+  text-align: center;
+}
+.coupon-list {
+  background-color: #fff;
+}
+.coupon-list li{
+  float: left;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  display: block;
+  height: 175px;
+  margin-left: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+  padding-top: 5px;
+  font-size: 12px;
+  float: left;
+  width: 31%;
+}
+.coupon-list li a{
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+.coupon-list li a img{
+  width: 100%;
+
+}
+/*coupon end*/
+/* footer begin */
+#footer .row div{
+  text-align:center;
+  border:1px solid #ccc;
+  height:30px;
+  line-height:30px;
+  margin-top: 10px;
+}
+#footer .row div +div {
+  border-left:none;
+}
+#footer .row div a img {
+  width: 15px;
+  height: 15px;
+}
+#footer p {
+  margin:5px;
+  text-align:center;
+  font-size:12px;
+
+}
+#footer p a:first-child {
+  color:red;
+}
+.footer-title {
+  background-color:#ff9000;
+  height:35px;
+  margin-top:5px;
+  color:#fff;
+  padding:5px 5px 0px 10px;
+  border-bottom:1px solid #ffc881;
+
+}
+#footer .footer-title span {
+  font-size:18px;
+  float: left;
+}
+#footer .footer-title img {
+  float: right;
+  margin-top:3px;
+}
+/* footer end */

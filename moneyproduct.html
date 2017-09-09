@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/moneyproduct.css">
+    <link rel="stylesheet" href="css/base.css">
+
+</head>
+<body>
+<!-- header begin -->
+<header id="header">
+    <a href="index.html" class="arrow"></a>
+    <h4>国内折扣</h4>
+    <a href="#" class="app"><img src="images/header_app.png" /></a>
+</header>
+<!-- header end -->
+<!-- moneyProduct begin -->
+<section id="moneyProduct">
+    <!--主体商品列表-->
+    <div class="moneyProduct-list">
+       <!-- <h3>限地区：众果 100%金冠黄元帅苹果汁 250ml*12盒</h3>
+        <h4>9.9元</h4>
+        <div class="info">
+            <span class="mall">京东商城</span>
+            <span class="addtime">06-22 15:38</span>&nbsp;&nbsp;
+            <span>拼了命 / 慢慢买</span>
+            <span class="author"><a href="#newcomment" style="color:#4682c5;">有1人评论</a></span>
+        </div>
+        <div class="content clearfix">
+            <div class="inst">
+                金冠黄元帅苹果汁金冠黄元帅苹果汁金冠黄元帅苹果汁金冠黄元帅苹果汁金冠黄元帅苹果汁金冠黄
+                元帅苹果汁金冠黄元帅苹果汁金冠黄元帅苹果汁金冠黄元帅苹果汁金冠黄元帅苹果汁金冠黄元帅苹果
+                汁金冠黄元帅苹果汁
+            </div>
+            <img src="./images/mmbweixin2.png" alt=""/>
+        </div>
+        <div class="big">
+            <p>汁金冠黄元帅苹果汁金冠黄元帅苹果汁金冠黄元帅苹果汁金冠黄元帅苹果汁金冠黄元帅苹果
+                汁金冠黄元帅苹果
+            </p>
+            <img src="./images/mmbweixin2.png" alt=""/>
+        </div>
+        <div class="area">
+            <ul>
+                <li><a href="#">
+                    <span>北京<strong>有货</strong></span>
+                </a></li>
+                <li><a href="#">
+                    <span>北京<strong>有货</strong></span>
+                </a></li>
+                <li><a href="#">
+                    <span>北京<strong>有货</strong></span>
+                </a></li>
+                <li><a href="#">
+                    <span>北京<strong>有货</strong></span>
+                </a></li>
+                <li><a href="#">
+                    <span>北京<strong>有货</strong></span>
+                </a></li>
+                <li><a href="#">
+                    <span>北京<strong>有货</strong></span>
+                </a></li>
+            </ul>
+        </div>
+        <div class="tobuy">
+            <a href="#">前往购买</a>
+        </div>
+        <div class="erweima">
+            <img src="./images/mmbweixin2.png" alt=""/>
+        </div>
+        <div class="comment">
+            <h5>发表评论</h5>
+            <textarea name="" id="" cols="20" rows="4" >
+
+            </textarea>
+            <span><a href="#">发表评论</a></span>
+        </div>
+        <h5>最新评论</h5>
+        <div class="new">
+            <ul>
+                <li class="ui-border-b clearfix">
+                    <div class="userimg">
+                        <img src="http://home.manmanbuy.com/upface/face/1497604826_162.jpg">
+                    </div>
+                    <div class="con">
+                        <div class="name clearfix">
+                        <div class="username">qq_269622</div>
+                        <div class="time">2017/6/22 15:51:18</div>
+                        </div>
+                    <div class="content">没货，很好，又一次完美的避过了浙江，浙江也是个被遗弃的地方啊</div>
+                    </div>
+                </li>
+            </ul>
+        </div>-->
+    </div>
+</section>
+<!-- moneyProduct end -->
+<!-- footer begin -->
+<footer id="footer">
+
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""><span>返回顶部</span></a>
+        </div>
+    </div>
+    <p>
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a> -- <span>掌上比价平台</span> <br>
+        <span class="url">m.manmanbuy.com</span>
+    </p>
+</footer>
+<!-- footer end -->
+
+<script type="text/html" id="moneyProductTmp">
+    {{each result as value i}}
+    <h3>{{value.productName}}</h3>
+    <h4>{{value.productPrice}}</h4>
+    <div class="info">
+        <span class="mall">{{value.productFrom}}</span>
+        <span class="addtime">{{value.productTime}}</span>&nbsp;&nbsp;
+        <span>{{value.productTips}}</span>
+        <span class="author"><a href="#newcomment" style="color:#4682c5;">{{value.productComCount}}</a></span>
+    </div>
+    <div class="content clearfix">
+        <div class="inst">
+            {{value.productInfo2}}
+        </div>
+       {{#value.productImgSm}}
+    </div>
+    <div class="big">
+        <p>
+            {{value.productInfo1}}
+        </p>
+        {{#value.productImgLg}}
+    </div>
+    <div class="area">
+        {{#value.productCity}}
+
+    </div>
+    <div class="tobuy">
+        <a href="#">前往购买</a>
+    </div>
+    <div class="erweima">
+        <img src="./images/mmbweixin2.png" alt=""/>
+    </div>
+    <div class="comment">
+        {{#value.productComment}}
+    </div>
+
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/moneyproduct.js"></script>
+</body>
+
+</html>

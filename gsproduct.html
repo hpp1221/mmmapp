@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="./js/less.js"></script>
+</head>
+<body>
+<!-- header begin -->
+<header id="header">
+    <a href="index.html" class="arrow"></a>
+    <h4>凑单品</h4>
+    <a href="#" class="app"><img src="images/header_app.png" /></a>
+</header>
+<!-- header end -->
+<!-- gsproduct begin -->
+<section id="gsproduct">
+    <!--商品列表标题-->
+    <div class="gsproduct-title clearfix">
+        <ul>
+            <li class="on"><a href="javascript:;">京东<i></i></a></li>
+            <li class=""><a href="javascript:;">华北<i></i></a></li>
+            <li class=""><a href="javascript:;">1元<i></i></a></li>
+        </ul>
+    </div>
+    <div class="search">
+        <i class="icon_search"></i>
+    </div>
+
+
+    <div class="list-shop" id="shop">
+    <ul>
+     <!--   <li><a href="">京东</a></li>
+        <li><a href="">京东</a></li>
+        <li><a href="">京东</a></li>-->
+    </ul>
+</div>
+    <div class="list-area" id="area">
+        <ul>
+            <!--<li><a href="">京东</a></li>
+            <li><a href="">京东</a></li>
+            <li><a href="">京东</a></li>-->
+        </ul>
+    </div>
+    <div class="list-price" id="price">
+        <ul>
+            <!--<li><a href="">京东</a></li>
+            <li><a href="">京东</a></li>
+            <li><a href="">京东</a></li>-->
+        </ul>
+    </div>
+    <!--商品列表-->
+    <div class="gsproduct-list clearfix">
+        <!--<ul>
+            <li>
+                <a href="http://item.m.jd.com/ware/view.action?wareId=4255886" class="item border-img">
+                    <div class="pic">
+                        <img src="http://img11.360buyimg.com/n7/jfs/t5104/254/2177137784/403381/1ecea50a/59180879Nc73e38db.jpg" style="width: 186px; height: 186px;">
+                    </div>
+                    <div class="title">【京东超市】 湖南特产 七味 休闲零食 真空包装 鹌鹑蛋22g   五香卤蛋</div>
+                    <div class="other">
+                        <div class="price"><em>¥</em>1.00</div>
+                        <div class="btn">去凑单</div><div class="clearfix"></div>
+                    </div>
+                </a>
+            </li>
+        </ul>-->
+    </div>
+</section>
+<!-- gsproduct end -->
+<!-- footer begin -->
+<footer id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""><span>返回顶部</span></a>
+        </div>
+    </div>
+    <p>
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a> -- <span>掌上比价平台</span> <br>
+        <span class="url">m.manmanbuy.com</span>
+    </p>
+</footer>
+<!-- footer end -->
+
+<script type="text/html" id="gsproductShopTmp">
+    <ul>
+        {{each result as value i}}
+        <li class=""><a href="#" data-shopid="{{value.shopId}}">{{value.shopName}}</a></li>
+        {{/each}}
+    </ul>
+
+
+</script>
+<script type="text/html" id="gsproductAreaTmp">
+    <ul>
+        {{each result as value i}}
+        <li class=""><a href="#" data-areaid="{{value.areaId}}">{{value.areaName}}</a></li>
+        {{/each}}
+    </ul>
+
+</script>
+
+<script type="text/html" id="gsproductTmp">
+    <ul>
+        {{each result as value i}}
+        <li>
+            <a href="http://item.m.jd.com/ware/view.action?wareId=4255886" class="item border-img">
+                <div class="pic">
+                    <img src="{{value.productImg}}" style="width: 186px; height: 186px;">
+                </div>
+                <div class="title">{{value.productName}}</div>
+                <div class="other">
+                    <div class="price">{{value.productPrice}}</div>
+                    <div class="btn">去凑单</div><div class="clearfix"></div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+
+</html>

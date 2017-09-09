@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/couponproduct.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/less.js"></script>
+</head>
+<body>
+<!-- header begin -->
+<header id="header">
+    <a href="coupon.html" class="arrow"></a>
+    <h4>肯德基优惠券</h4>
+    <a href="#" class="app"><img src="images/header_app.png"/></a>
+</header>
+<!-- header end -->
+<!-- couponproduct begin -->
+<section id="couponproduct">
+    <!--主体商品列表-->
+    <!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">-->
+    <!--</button>-->
+    <!-- Modal -->
+
+
+
+    <div class="couponproduct-list clearfix">
+        <div>
+            <div class="dian">
+                --点餐前出示手机中的优惠券，即可享受优惠--
+            </div>
+            <div class="quan-box">
+                <div id="ctl00_ContentBody_quanlist" class="quan-list" data-gallery="one">
+                  <!--  <ul>
+                        <li>
+                            <a href="http://d3.5ikfc.com/static/thumbs/617/kfc-5ikfc-612_p4.jpg" title=" 肯德基老坛酸菜鸡块饭 2017年6月凭肯德基优惠券">
+                                <div class="pic">
+                                    <img src="http://d3.5ikfc.com/static/thumbs/617/kfc-5ikfc-612_p4.jpg" alt=" 肯德基老坛酸菜鸡块饭 2017年6月凭肯德基优惠券">
+                                </div>
+                                <div class="info">
+                                    <div class="tit">
+                                        <h3>C4  肯德基老坛酸菜鸡块饭 2017年6月凭肯德基优惠券</h3>
+                                        <h2><em>￥</em> 21</h2>
+                                    </div>
+                                    <div class="time">有效期至6月30日</div>
+                                    <i class="arrow1">  </i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+
+                            <!--<div class="item">
+                                {{#value.couponProductImg}}
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>-->
+                            ...
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- couponproduct end -->
+<!-- footer begin -->
+<footer id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""><span>返回顶部</span></a>
+        </div>
+    </div>
+    <p>
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a> -- <span>掌上比价平台</span> <br>
+        <span class="url">m.manmanbuy.com</span>
+    </p>
+</footer>
+<!-- footer end -->
+
+
+<script type="text/html" id="couponproductTmp">
+    <ul>
+        {{each result as value i}}
+        <li>
+            <a data-productId="{{value.couponProductId}}" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" title=" 肯德基老坛酸菜鸡块饭 2017年6月凭肯德基优惠券">
+                <div class="pic">
+                    {{#value.couponProductImg}}
+                </div>
+                <div class="info">
+                    <div class="tit">
+                        <h3>{{value.couponProductName}}</h3>
+                        <h2>{{value.couponProductPrice}}</h2>
+                    </div>
+                    <div class="time">{{value.couponProductTime}}</div>
+                    <i class="arrow1">  </i>
+                </div>
+            </a>
+        </li>
+
+        {{/each}}
+    </ul>
+</script>
+<script type="text/html" id="slidePicTemp">
+    {{each result as value i}}
+
+    <div class="item" value="{{value.couponProductId}}">
+        <!--<img src="..." alt="...">-->
+        {{#value.couponProductImg}}
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/couponproduct.js"></script>
+</body>
+
+</html>

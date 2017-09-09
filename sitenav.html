@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/sitenav.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<!-- header begin -->
+<header id="header">
+    <a href="index.html" class="arrow"></a>
+    <h4>商场导航</h4>
+    <a href="#" class="app"><img src="images/header_app.png" /></a>
+</header>
+<!-- header end -->
+<!-- moneyctrl begin -->
+<section id="siteNav">
+
+</section>
+<!-- moneyctrl end -->
+<!-- footer begin -->
+<footer id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""><span>返回顶部</span></a>
+        </div>
+    </div>
+    <p>
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a> -- <span>掌上比价平台</span> <br>
+        <span class="url">m.manmanbuy.com</span>
+    </p>
+</footer>
+<!-- footer end -->
+
+<script id="siteNavTmp" type="text/html">
+    <div class="link">
+        {{each result as value i}}
+        <a href="{{value.navHref}}" target="_blank"><img src="{{value.navImg}}" alt=""> {{value.navTitle}}</a> {{/each}}
+    </div>
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/sitenav.js"></script>
+</body>
+
+</html>

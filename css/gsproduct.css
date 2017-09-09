@@ -1,0 +1,214 @@
+/* header begin */
+html,body {
+  background-color: #fff;
+}
+#header {
+  height: 50px;
+  background-color: #ff841d;
+  //padding:12px;
+  border-bottom:1px solid #e6e6e6;
+
+}
+#header .arrow {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/icon_bar.png);
+  background-position: -95px 3px;
+  background-size: 230px 134px;
+  color: #fff;
+  float: left;
+}
+#header h4 {
+  margin:0;
+  float: left;
+  color: #fff;
+  line-height: 50px;
+  left: 50%;
+  position: absolute;
+  margin-left: -27px;
+}
+.app {
+  float: right;
+  margin:8px 10px 0 0;
+}
+.app img {
+  height:34px;
+
+}
+/* header end */
+/*gsproduct begin*/
+#gsproduct .gsproduct-title ul li a{
+  display: inline-block;
+  height: 39px;
+  line-height: 40px;
+  width: 33.333%;
+  float: left;
+  text-align: left;
+  background-color: #fff;
+  padding-left: 27px;
+  position: relative;
+  border-bottom: 1px solid #dadada;
+  color: #5a5a5a;
+  font-size: 16px;
+  overflow: hidden;
+
+}
+.search {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right:0;
+  top:49px;
+  background-color: #e1e1e1;
+
+}
+.search .icon_search {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/icon_bar.png");
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-position: -2px -44px;
+  /* width: 220px; */
+  background-size: 220px 132px;
+}
+#gsproduct .list-shop {
+  width: 100%;
+  height: 120px;
+  background-color: red;
+  display: none;
+}
+#gsproduct .list-area {
+  width: 100%;
+  height: 120px;
+  background-color: red;
+  display: none;
+}
+#gsproduct .list-area li {
+  line-height: 40px;
+  background-color: #fff;
+}
+#gsproduct .list-shop li {
+  line-height: 40px;
+  background-color: #fff;
+}
+#gsproduct .list-area li a{
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background-color: #fff;
+  padding-left: 10px;
+  border-bottom: 1px solid #ededed;
+  color: #5a5a5a;
+  font-size: 16px;
+}
+#gsproduct .list-shop li a{
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background-color: #fff;
+  padding-left: 10px;
+  border-bottom: 1px solid #ededed;
+  color: #5a5a5a;
+  font-size: 16px;
+}
+.gsproduct-title ul li i{
+
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' v¡­72 277.44 445.386667Z' transform='translate(0, 812) scale(1, -1)'/></svg>");
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-size: 22px 22px;
+  background-position: center center;
+}
+.gsproduct-list ul li {
+  float: left;
+  width: 50%;
+  border-bottom: 5px solid #f1f1f1;
+  border-right: 5px solid #f1f1f1;
+  background-color: #fff;
+}
+.gsproduct-list .title{
+  color: #333333;
+  word-break: break-all;
+  padding: 0 6px;
+  height: 14px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 6px;
+}
+.gsproduct-list .other {
+  width: 100%;
+  padding:6px;
+}
+.gsproduct-list .price{
+  float: left;
+  color: #f8601d;
+  font-size: 20px;
+  //margin-top: 3px;
+  float: left;
+
+}
+.gsproduct-list .btn {
+  width: 64px;
+  height: 30px;
+  line-height: 17px;
+  background-color: #ff9705;
+  margin-left: 46px;
+  float: right;
+  color: #fff;
+}
+/*gsproduct end*/
+
+/* footer begin */
+#footer .row div{
+  text-align:center;
+  border:1px solid #ccc;
+  height:30px;
+  line-height:30px;
+  margin-top: 10px;
+}
+#footer .row div +div {
+  border-left:none;
+}
+#footer .row div a img {
+  width: 15px;
+  height: 15px;
+}
+#footer p {
+  margin:5px;
+  text-align:center;
+  font-size:12px;
+
+}
+#footer p a:first-child {
+  color:red;
+}
+.footer-title {
+  background-color:#ff9000;
+  height:35px;
+  margin-top:5px;
+  color:#fff;
+  padding:5px 5px 0px 10px;
+  border-bottom:1px solid #ffc881;
+
+}
+#footer .footer-title span {
+  font-size:18px;
+  float: left;
+}
+#footer .footer-title img {
+  float: right;
+  margin-top:3px;
+}
+/* footer end */

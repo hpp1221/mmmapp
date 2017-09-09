@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/productList.css">
+        <link rel="stylesheet" href="css/base.css">
+       
+    </head>
+    <body>
+    <!-- header begin -->
+	 <header id="header">
+		<a href="index.html" class="logo"><img src="images/header_logo.png" /></a>
+		<a href="#" class="app"><img src="images/header_app.png" /></a>
+	 </header>
+	<!-- header end -->
+	<!-- seareh begin -->
+	 <section id="search">
+	 <form action="#">	 	
+	 	<input type="search" value="" class="search" placeholder="请输入要比价的商品">
+	 	<input type="submit" name="" id="" class="submit" value="搜索">
+	 </form>	
+	 </section>
+	<!-- seareh end -->
+	<!-- productList begin -->
+	 <section id="productList">
+		 <!--分类标题-->
+		<div class="category-title">
+			<ol class="breadcrumb">
+				<li><a href="bijia.html">首页</a></li>
+				<li><a href="category.html">全部分类</a></li>
+				<li class="active"></li>
+			</ol>
+			<a href="#" class="btn btn-default">筛选</a>
+		</div>
+		 <!--主体商品列表-->
+		 <div class="product-list">
+			 <!--<div class="media">-->
+				 <!--<div class="media-left">-->
+					 <!--<a href="#">-->
+						 <!--<img class="media-object" src="./images/mmbweixin2.png" alt="...">-->
+					 <!--</a>-->
+				 <!--</div>-->
+				 <!--<div class="media-body">-->
+					 <!--<h5>3fgjiorhgtihbithb</h5>-->
+					 <!--<p class="price">$23545</p>-->
+					 <!--<em>报价</em> &nbsp;  <em>评论(5522)</em>-->
+				 <!--</div>-->
+			 <!--</div>-->
+		 </div>
+		 <!--上下页数-->
+		 <div class="product-option clearfix">
+			 <!--<input type="button" value="上一页" class="btn btn-default1"/>-->
+			 <a href="#" class="btn btn-default1 page-prev">上一页</a>
+			 <div class="dropdown">
+				 <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					   第一页
+					 <span class="caret"></span>
+				 </a>
+
+				 <ul class="dropdown-menu" aria-labelledby="dLabel">
+					 <li>第一页</li>
+					 <li>第二页</li>
+					 <li>第三页</li>
+				 </ul>
+			 </div>
+			 <!--<input type="button" value="下一页" class="btn btn-default2"/>-->
+			 <a href="#" class="btn btn-default2 page-next">下一页</a>
+
+		 </div>
+
+	 </section>
+	<!-- productList end -->
+	<!-- footer begin -->
+	 <footer id="footer">
+	 	<div class="footer-title ">
+	 		<span>品牌排行</span>
+	 		<img src="http://www.zuyushop.com/wap/images/more.png" width="20" height="20">
+	 	</div>
+	 	<div class="row">
+	 		<div class="col-xs-4">
+	 			<a href="#">登录</a>
+	 		</div>
+	 		<div class="col-xs-4">
+	 			<a href="#">注册</a>
+	 		</div>
+	 		<div class="col-xs-4">
+	 			<a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""><span>返回顶部</span></a>
+	 		</div>
+	 	</div>
+	 	<p>
+	 		<a href="#">手机APP下载</a>
+	 		<a href="#">慢慢买手机版</a> -- <span>掌上比价平台</span> <br>
+	 		<span class="url">m.manmanbuy.com</span>
+	 	</p>
+	 </footer>
+	<!-- footer end -->
+	<script type="text/html" id="productListTmp">
+		{{each result as value i}}
+		<div class="media">
+			<div class="media-left">
+				<a href="#">
+					{{#value.productImg}}
+				</a>
+			</div>
+			<div class="media-body">
+				<h5><a href="bijia.html?productid={{value.productId}}">{{value.productName}}</a></h5>
+				<p class="price">{{value.productPrice}}</p>
+				<em>{{value.productQuote}}</em> &nbsp;  <em>{{value.productCom}}</em>
+			</div>
+		</div>
+		{{/each}}
+	</script>
+	<script type="text/html" id="categoryTitleTmp">
+		{{each result as value i}}
+		<li><a href="#">首页</a></li>
+		<li><a href="#">全部分类</a></li>
+		<li class="active">{{value.category}}</li>
+		{{/each}}
+	</script>
+
+	<script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/template.js"></script>
+     <script src="js/productList.js"></script>
+    </body>
+    
+</html>

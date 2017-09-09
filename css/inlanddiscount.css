@@ -1,0 +1,194 @@
+/*header begin*/
+html,body {
+  background-color: #fff;
+}
+#header {
+  height: 50px;
+  background-color: #ff841d;
+  //padding:12px;
+  border-bottom:1px solid #e6e6e6;
+
+}
+#header .arrow {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/icon_bar.png);
+  background-position: -95px 3px;
+  background-size: 230px 134px;
+  color: #fff;
+  float: left;
+}
+#header h4 {
+  margin:0;
+  float: left;
+  color: #fff;
+  line-height: 50px;
+  left: 50%;
+  position: absolute;
+  margin-left: -36px;
+}
+.app {
+  float: right;
+  margin:8px 10px 0 0;
+}
+.app img {
+  height:34px;
+
+}
+/*header end*/
+
+/*inlanddiscount begin*/
+.cu-friend {
+  max-width: 960px;
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  margin: 0px auto;
+}
+
+.cu-friend ul {
+  display: table;
+  width: 100%;
+  font-size: 0;
+  white-space: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cu-friend ul li {
+  float: left;
+  display: table-cell;
+  padding: 10px 0 0 10px;
+  text-align: center;
+  vertical-align: middle;
+  background: none;
+  width: 50%;
+  background: #FFFFFF;
+  border: 1px solid #eeeeee;
+  border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+  -webkit-border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top-width: 0;
+  overflow: hidden;
+}
+
+.cu-friend ul li:nth-child(even) {
+  border-left-width: 0;
+}
+
+.cu-friend ul li a {
+  display: block;
+}
+
+.cu-friend .noborder {
+  margin-left: 0px;
+}
+
+.cu-friend .img {
+  margin: 10px auto;
+  overflow: hidden;
+  width: 140px;
+  height: 140px;
+}
+
+.cu-friend .img img {
+  width: 140px;
+  height: 140px;
+}
+
+.cu-friend .title {
+  color: #333333;
+  word-break: break-all;
+  padding: 0 8px;
+  font-size: 14px;
+  text-align: left;
+  text-align-last: left;
+  line-height: 18px;
+  height: 36px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cu-friend .subtit {
+  color: #ff6c00;
+  margin-top: 4px;
+  font-size: 14px;
+  padding: 0 8px;
+  text-align: left;
+  text-align-last: left;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 18px;
+  line-height: 18px;
+}
+
+.cu-friend .info {
+  padding: 6px 8px
+}
+
+.cu-friend .mall {
+  color: #a1a1a1;
+  font-size: 12px;
+  text-align: left;
+}
+
+@media (min-width:600px) {
+  .inland-discount-list > ul > li {
+    height: 400px;
+  }
+}
+
+/*inlanddiscount end*/
+
+/* footer begin */
+#footer .row div{
+  text-align:center;
+  border:1px solid #ccc;
+  height:30px;
+  line-height:30px;
+  margin-top: 10px;
+}
+#footer .row div +div {
+  border-left:none;
+}
+#footer .row div a img {
+  width: 15px;
+  height: 15px;
+}
+#footer p {
+  margin:5px;
+  text-align:center;
+  font-size:12px;
+
+}
+#footer p a:first-child {
+  color:red;
+}
+.footer-title {
+  background-color:#ff9000;
+  height:35px;
+  margin-top:5px;
+  color:#fff;
+  padding:5px 5px 0px 10px;
+  border-bottom:1px solid #ffc881;
+
+}
+#footer .footer-title span {
+  font-size:18px;
+  float: left;
+}
+#footer .footer-title img {
+  float: right;
+  margin-top:3px;
+}
+/* footer end */
